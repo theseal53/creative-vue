@@ -1,0 +1,31 @@
+body {
+    font-family: 'Arvo';
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    background: #ddddff;
+    text-align: center;
+}
+
+/* List */
+
+ul {
+  width: 70%;
+  margin: auto;
+}
+
+li {
+    background: #fff;
+    margin-bottom: 10px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+input[type=text] {
+    font-size: 1em;
+}
+
+button {
+    font-family: 'Arvo';
+    font-size: 1em;
+}

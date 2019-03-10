@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>The button</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <h1>Here's {{buttonName}}</h1>
+    <p> Click it. Go on.</p>
+    <form v-on:submit.prevent="clickButton">
+      <button type="submit">{{buttonName}}</button>
+    </form>
+    <div v-show="timesClicked != 0">
+      <p>Here's some information you should know about you and {{buttonName}}</p>
+      <ul>
+        <li v-for="item in getEvents" v-text="convertToMyString(item)">
+        </li>
+      </ul>
+    </div>
+    <div>
+      <p> Want to change the name of the button? Do it here.</p>
+      <input type="text" id="input" v-model="buttonName">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.7/dist/vue.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
